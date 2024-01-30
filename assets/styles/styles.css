@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-color: #EBECEE;
+    --constrat-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--constrat-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+}
+
+.header__menu {
+    width: 48px;
+    height: 48px;
+    background-image: url("../ico/menu.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__container__ico {
+    padding: 1.5px;
+}
