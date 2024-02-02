@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/reset.css" />
     <link rel="stylesheet" href="assets/styles/styles.css" />
     <title>AluraBooks</title>
   </head>
   <body>
     <header class="header">
       <div class="header__container">
-        
         <input id="menu" type="checkbox" class="header__menu__ico"/>
         <label for="menu">
           <span class="header__menu header__container__ico">
@@ -62,7 +65,13 @@
         /></a>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="section__banner">
+        <h2 class="section__banner__title">Já sabe por onde começar?</h2>
+        <p class="section__banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input class="section__banner__finder" type="search" id="finder" placeholder="Qual será sua próxima leitura?">
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
