@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/styles/reset.css" />
     <link rel="stylesheet" href="assets/styles/styles.css" />
     <title>AluraBooks</title>
@@ -71,7 +72,44 @@
         <p class="section__banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input class="section__banner__finder" type="search" id="finder" placeholder="Qual será sua próxima leitura?">
       </section>
+      
+      <section class="section__cards">
+        <h2 class="section__cards__title">ÚLTIMOS LANÇAMENTOS</h2>
+        <div class="swiper">
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="assets/img/lideranca.svg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/apacheKafka.svg" alt=""></div>
+              <div class="swiper-slide">
+                <img src="assets/img/javascript.svg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/nodejs.svg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/acessibilidade.svg" alt="">
+              </div>
+            </div>
+          </div>
+      </section>
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        spaceBetween: 10, 
+        slidesPerView: 3,
+        pagination: {
+          el: '.swiper-pagination', 
+          type: 'bullets',
+        }
+      });
+    </script>
   </body>
 </html>
