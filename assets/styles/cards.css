@@ -66,13 +66,11 @@
 .card__main__buttons__list {
     display: flex;
     margin: 0 1em;
-    list-style: none;
 }
 
 .card__buttons__main {
     background-color: var(--orange);
     color: var(--constrat-color);
-    text-decoration: none;
     font-weight: 700;
     padding: 1em;
     width: 38%;
@@ -81,7 +79,6 @@
 
 .card__main__star__list {
     display: flex;
-    list-style: none;
 }
 
 .card__main__star {
