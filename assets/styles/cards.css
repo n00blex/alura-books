@@ -20,3 +20,70 @@
     position: initial;
     margin: 0.5em 0;
 }
+
+.card__main {
+    background: var(--constrat-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 0.65em;
+}
+
+.card__main__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.card__main__grid {
+    width: 70%;
+}
+
+.card__main__title {
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.card__main__name {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin: 0.5em 0;
+}
+
+.card__main__resume {
+    font-size: 0.875rem;
+    width: 90%;
+    margin: 0 0 0.3em 0;
+}
+
+.card__main__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__main__buttons__list {
+    display: flex;
+    margin: 0 1em;
+    list-style: none;
+}
+
+.card__buttons__main {
+    background-color: var(--orange);
+    color: var(--constrat-color);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1em;
+    width: 38%;
+    text-align: center;
+}
+
+.card__main__star__list {
+    display: flex;
+    list-style: none;
+}
+
+.card__main__star {
+    margin: 0 0.25em 0 0;
+}
