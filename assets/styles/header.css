@@ -1,114 +1,126 @@
 header {
-    background-color: var(--constrat-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 24px; /*TODO*/
+  background-color: var(--constrat-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px; /*TODO*/
 }
 
 .header__menu {
-    width: 48px;
-    height: 48px;
-    background-image: url("../ico/menu.svg");
-    background-repeat: no-repeat;
-    display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-image: url("../ico/menu.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
-    gap: 12px; /*TODO*/
-    position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px; /*TODO*/
+  position: relative;
 }
 
 .header__container__ico {
-    padding: 1.5px;
+  padding: 1.5px;
 }
 
 .header__menu__list {
-    list-style-type: none;
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: 55vw; /*TODO*/
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 55vw; /*TODO*/
 }
 
 .header__menu__ico {
-    display: none;
+  display: none;
 }
 
 .header__menu__ico:checked ~ .header__menu__list {
-    display: block;
+  display: block;
 }
 
-.header__menu__list__title, 
+.header__menu__list__title,
 .header__menu__list__item {
-    padding: 1em;
-    background-color: var(--constrat-color);
+  padding: 1em;
+  background-color: var(--constrat-color);
 }
 
 .header__menu__list__title {
-    color: var(--orange);
-    font-weight: 700;
+  color: var(--orange);
+  font-weight: 700;
 }
 
 .header__menu__list__item__link {
-    text-decoration: none;
-    background: var(--blue-gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  background: var(--blue-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header__container__title {
-    display: none;
+  display: none;
 }
 
 .header__categories {
-    display: none;
+  display: none;
+}
+
+.header__menu__list__item:hover {
+  background: var(--blue-gradient);
+}
+
+.header__menu__list__item:hover > .header__menu__list__item__link {
+  -webkit-text-fill-color: var(--constrat-color);
 }
 
 @media screen and (min-width: 1024px) {
-    
-    .header__container__title, .header__container__title__bold {
-        font-family: var(--font-secondary);
-        font-size: 1.875rem;
-        display: flex;
-    }
+  .header__container__title,
+  .header__container__title__bold {
+    font-family: var(--font-secondary);
+    font-size: 1.875rem;
+    display: flex;
+  }
 
-    .header__container__title {
-        font-weight: 400;
-    }
+  .header__container__title {
+    font-weight: 400;
+  }
 
-    .header__container__title__bold {
-        font-weight: 700;
-    }
+  .header__container__title__bold {
+    font-weight: 700;
+  }
 
-    .header__categories {
-        display: flex;
-    }
-    
-    .header__category {
-        padding: 0 1em;
-        text-transform: uppercase;
-    }
+  .header__categories {
+    display: flex;
+  }
 
-    /*TODO*/
-    .category__check:checked ~ .header__menu__list {
-        display: block;
-        width: auto;
-    }
-    /*TODO*/
+  .header__category {
+    padding: 1em;
+    text-transform: uppercase;
+  }
 
-    .header__category__link {
-        color: var(--black);
-    }
+  .category__check:checked ~ .category__check__label > .header__category {
+    background: var(--blue-gradient);
+    color: var(--constrat-color);
+  }
 
-    .hide {
-        display: none;
-    }
+  .category__check:checked ~ .header__menu__list {
+    display: block;
+    width: auto;
+    top: 5%;
+  }
 
-    .category__check {
-        display: none;
-    }
+  .header__menu__list:hover ~ .header__menu__list__item {
+    background-color: var(--blue-gradient);
+  }
+
+  .header__category__link {
+    color: var(--black);
+  }
+
+  .hide {
+    display: none;
+  }
 }
