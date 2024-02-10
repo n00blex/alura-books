@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/styles/reset.css" />
     <link rel="stylesheet" href="assets/styles/styles.css" />
@@ -16,7 +17,7 @@
       <div class="header__container">
         <input id="menu" type="checkbox" class="header__menu__ico"/>
         <label for="menu">
-          <span class="header__menu header__container__ico">
+          <span class="header__menu header__container__ico hide">
         </label>
         <ul class="header__menu__list">
           <li class="header__menu__list__title">
@@ -44,11 +45,39 @@
           src="assets/ico/logo.svg"
           alt="Logotipo da AluraBooks"
         />
+        <h1 class="header__container__title"><b class="header__container__title__bold">Alura</b>Books</h2>
       </div>
+
+      <ul class="header__categories">
+        <input type="checkbox" id="category-check" class="category__check">
+        <label for="category-check">
+          <li class="header__category">Categorias</li>
+        </label>
+        <ul class="header__menu__list">
+          <li class="header__menu__list__item">
+            <a href="#" class="header__menu__list__item__link">PROGRAMAÇÃO</a>
+          </li>
+          <li class="header__menu__list__item">
+            <a href="#" class="header__menu__list__item__link">FRONT-END</a>
+          </li>
+          <li class="header__menu__list__item">
+            <a href="#" class="header__menu__list__item__link">INFRAESTRUTURA</a>
+          </li>
+          <li class="header__menu__list__item">
+            <a href="#" class="header__menu__list__item__link">BUSINESS</a>
+          </li>
+          <li class="header__menu__list__item">
+            <a href="#" class="header__menu__list__item__link">DESIGN & UX</a>
+          </li>
+        </ul>
+        <li class="header__category"><a href="#" class="header__category__link">Favoritos</a></li>
+        <li class="header__category"><a href="#" class="header__category__link">Minha estante</a></li>
+      </ul>
+
       <div class="header__container">
         <a href="#"
           ><img
-            class="header__container__ico"
+            class="header__container__ico hide"
             src="assets/ico/favoritos.svg"
             alt="Icone de Favoritos"
         /></a>

@@ -10,8 +10,10 @@
     --constrat-color: #FFFFFF;
     --orange: #EB9B00;
     --blue: #002F52;
+    --black: #000000;
     --blue-gradient: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
     --font: 'Poppins';
+    --font-secondary: 'Josefin Sans'
 }
 
 body {

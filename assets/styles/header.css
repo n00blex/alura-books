@@ -59,3 +59,56 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.header__container__title {
+    display: none;
+}
+
+.header__categories {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .header__container__title, .header__container__title__bold {
+        font-family: var(--font-secondary);
+        font-size: 1.875rem;
+        display: flex;
+    }
+
+    .header__container__title {
+        font-weight: 400;
+    }
+
+    .header__container__title__bold {
+        font-weight: 700;
+    }
+
+    .header__categories {
+        display: flex;
+    }
+    
+    .header__category {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    /*TODO*/
+    .category__check:checked ~ .header__menu__list {
+        display: block;
+        width: auto;
+    }
+    /*TODO*/
+
+    .header__category__link {
+        color: var(--black);
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .category__check {
+        display: none;
+    }
+}
