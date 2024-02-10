@@ -33,3 +33,21 @@
     background: url("../ico/pesquisa.svg") no-repeat;
     background-position: 0.65em;
 }
+
+@media screen and (min-width: 1024px) {
+    .section__banner__title {
+        font-size: 2.25rem;
+    }
+
+    .section__banner__text {
+        font-size: 1rem;
+    }
+
+    .section__banner__finder {
+        width: 50%;
+    }
+
+    .section__banner__finder::placeholder {
+        background-position: 5em;
+    }
+}
