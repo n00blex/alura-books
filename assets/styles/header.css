@@ -76,6 +76,10 @@ header {
   -webkit-text-fill-color: var(--constrat-color);
 }
 
+.header__container__link__label {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .header__container__title,
   .header__container__title__bold {
@@ -122,5 +126,25 @@ header {
 
   .hide {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .header__container__link {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+  }
+
+  .header__container__link__label {
+    display: block;
+  }
+
+  .header__categories {
+    margin-right: auto;
+  }
+
+  .category__check:checked ~ .header__menu__list {
+    top: 13%;
   }
 }

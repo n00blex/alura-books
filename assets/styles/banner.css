@@ -1,53 +1,60 @@
 .section__banner {
-    background: var(--blue-gradient);
-    color: var(--background-color);
-    text-align: center;
-    padding: 2.5em 2em;
+  background: var(--blue-gradient);
+  color: var(--background-color);
+  text-align: center;
+  padding: 2.5em 2em;
 }
 
 .section__banner__title {
-    font-size: 1.125rem;
-    font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 .section__banner__text {
-    font-weight: 500;
-    margin: 1em 0;
+  font-weight: 500;
+  margin: 1em 0;
 }
 
 .section__banner__finder {
-    background-color: transparent;
-    border: 1px solid var(--background-color);
-    border-radius: 24px;
-    color: var(--background-color);
-    padding: 1em;
-    width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--background-color);
+  border-radius: 24px;
+  color: var(--background-color);
+  padding: 1em;
+  width: 100%;
 }
 
 .section__banner__finder::placeholder {
-    text-align: center;
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: var(--background-color);
-    font-family: var(--font);
-    background: url("../ico/pesquisa.svg") no-repeat;
-    background-position: 0.65em;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--background-color);
+  font-family: var(--font);
+  background: url("../ico/pesquisa.svg") no-repeat;
+  background-position: 0.65em;
 }
 
 @media screen and (min-width: 1024px) {
-    .section__banner__title {
-        font-size: 2.25rem;
-    }
+  .section__banner__title {
+    font-size: 2.25rem;
+  }
 
-    .section__banner__text {
-        font-size: 1rem;
-    }
+  .section__banner__text {
+    font-size: 1rem;
+  }
 
-    .section__banner__finder {
-        width: 50%;
-    }
+  .section__banner__finder {
+    width: 50%;
+  }
 
-    .section__banner__finder::placeholder {
-        background-position: 5em;
-    }
+  .section__banner__finder::placeholder {
+    background-position: 5em;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .section__banner__finder {
+    width: 30%;
+    padding: 1em 4em;
+  }
 }
