@@ -41,6 +41,14 @@ header {
   display: block;
 }
 
+.header__menu__ico:checked ~ .header__container__label > .header__menu {
+  background-image: url("../ico/menuAberto.svg");
+}
+
+.header__menu__ico:checked ~ .header__container__label {
+  background: var(--blue-gradient);
+}
+
 .header__menu__list__title,
 .header__menu__list__item {
   padding: 1em;
