@@ -59,10 +59,19 @@
     font-size: 1.5rem;
   }
 
-  .section_contact__content {
-  }
-
   .section_contact__search {
     margin-right: 6em;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .section__contact {
+    padding: 2em 25vw;
+  }
+
+  .section__contact__description {
+    padding: 0;
+    width: 100%;
+    margin-left: 0;
   }
 }

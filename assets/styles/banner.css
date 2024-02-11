@@ -53,6 +53,10 @@
 }
 
 @media screen and (min-width: 1728px) {
+  .section__banner {
+    padding: 5em 0;
+  }
+
   .section__banner__finder {
     width: 30%;
     padding: 1em 4em;

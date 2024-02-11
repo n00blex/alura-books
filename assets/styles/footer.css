@@ -44,4 +44,16 @@ hr {
     align-items: center;
     gap: 0.35em;
   }
+
+  .footer__list__item > a {
+    color: #474646;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .footer__list {
+    border-left: 1px solid #858585;
+    padding: 0 2em;
+  }
 }

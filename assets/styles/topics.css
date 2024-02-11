@@ -46,3 +46,9 @@
     margin: 2.25em 0.5em;
   }
 }
+
+@media screen and (min-width: 1728px) {
+  .section__topics__list {
+    padding: 1em 25vw;
+  }
+}

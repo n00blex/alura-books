@@ -128,4 +128,30 @@
   .section__cards {
     padding: 0;
   }
+
+  .section__cards__swiper {
+    display: flex;
+    align-items: center;
+    margin: 2em 15vw;
+  }
+
+  .swiper-pagination {
+    margin: 0;
+  }
+
+  .card__main {
+    margin-left: 6em;
+    width: 60%;
+  }
+  .card__main__title {
+    font-size: 2rem;
+  }
+
+  .card__buttons__main {
+    width: 21.5%;
+  }
+
+  .section__cards__title {
+    padding: 2em 0 0.5em 0;
+  }
 }
